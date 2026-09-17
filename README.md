@@ -10,6 +10,7 @@
 | 分类 | 项目 | 简介 | 推荐度 |
 | --- | --- | --- | --- |
 | AI / Agent | [stripe/ai](projects/ai/stripe-ai.md) | Stripe 官方面向 AI Agent 的 SDK、MCP、插件和技能集合，用于把支付、计费、Connect 等能力接入主流 Agent 框架。 | 4.5 / 5 |
+| AI / Agent | [cloudflare/ai](projects/ai/cloudflare-ai.md) | Cloudflare 官方 AI SDK/adapter monorepo，将 Workers AI、AI Gateway、AI Search 接入 Vercel AI SDK、TanStack AI、Workers 和 MCP 示例。 | 4.6 / 5 |
 
 ## 分类说明
 
