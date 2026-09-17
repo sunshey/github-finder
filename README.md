@@ -12,6 +12,7 @@
 | AI / Agent | [stripe/ai](projects/ai/stripe-ai.md) | Stripe 官方面向 AI Agent 的 SDK、MCP、插件和技能集合，用于把支付、计费、Connect 等能力接入主流 Agent 框架。 | 4.5 / 5 |
 | AI / Agent | [cloudflare/ai](projects/ai/cloudflare-ai.md) | Cloudflare 官方 AI SDK/adapter monorepo，将 Workers AI、AI Gateway、AI Search 接入 Vercel AI SDK、TanStack AI、Workers 和 MCP 示例。 | 4.6 / 5 |
 | AI / Agent | [vercel/ai](projects/ai/vercel-ai.md) | Vercel 官方 AI SDK，面向 TypeScript 的统一模型调用、流式 UI、工具调用、Agent、MCP 和多 provider 生态基础库。 | 4.9 / 5 |
+| AI / Agent | [deepseek-ai/deepseek-harness](projects/ai/deepseek-harness.md) | DeepSeek AI 官方 Agent Harness，以 Cordis 插件树组织 Web UI、headless、SDK、ACP、工具调用、会话日志、沙箱和插件生态。 | 4.8 / 5 |
 
 ## 分类说明
 
