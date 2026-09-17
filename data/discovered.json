@@ -1,0 +1,369 @@
+{
+  "generated_at": "2026-09-17T03:35:00+00:00",
+  "request_budget": {
+    "used": 5,
+    "max": 24,
+    "delay_seconds": 2.0
+  },
+  "criteria": {
+    "lookback_days": 14,
+    "min_stars": 300,
+    "max_projects_per_run": 12
+  },
+  "projects": [
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "category": "AI / Agent",
+      "description": "DeepSeek Harness: Everything is a Plugin.",
+      "language": "TypeScript",
+      "stars": 226854,
+      "forks": 27037,
+      "open_issues": 0,
+      "created_at": "2026-08-13T11:56:32Z",
+      "pushed_at": "2026-09-15T04:51:11Z",
+      "topics": [
+        "ai-agents",
+        "cordis",
+        "dsh",
+        "dsh-plugin"
+      ],
+      "score": 3127.68,
+      "rating": 5.0,
+      "summary": "DeepSeek Harness: Everything is a Plugin.",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 ai-agents, cordis, dsh, dsh-plugin"
+      ]
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "category": "AI / Agent",
+      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+      "language": "TypeScript",
+      "stars": 389914,
+      "forks": 81962,
+      "open_issues": 7593,
+      "created_at": "2025-11-24T10:16:47Z",
+      "pushed_at": "2026-09-17T03:33:03Z",
+      "topics": [
+        "ai",
+        "assistant",
+        "crustacean",
+        "molty",
+        "openclaw",
+        "own-your-data",
+        "personal"
+      ],
+      "score": 1829.17,
+      "rating": 5.0,
+      "summary": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 ai, assistant, crustacean, molty, openclaw"
+      ]
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "category": "AI / Agent",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 263707,
+      "forks": 22253,
+      "open_issues": 501,
+      "created_at": "2026-02-03T11:15:53Z",
+      "pushed_at": "2026-09-15T14:29:06Z",
+      "topics": [],
+      "score": 1421.77,
+      "rating": 5.0,
+      "summary": "Skills for Real Engineers. Straight from my .agents directory.",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新"
+      ]
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "category": "AI / Agent",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 260396,
+      "forks": 38979,
+      "open_issues": 218,
+      "created_at": "2026-01-18T00:51:51Z",
+      "pushed_at": "2026-09-15T19:33:00Z",
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "score": 1354.61,
+      "rating": 5.0,
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 ai-agents, anthropic, claude, claude-code, developer-tools"
+      ]
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "category": "AI / Agent",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 287674,
+      "forks": 25733,
+      "open_issues": 371,
+      "created_at": "2025-10-09T19:45:18Z",
+      "pushed_at": "2026-09-14T18:42:08Z",
+      "topics": [
+        "ai",
+        "brainstorming",
+        "coding",
+        "obra",
+        "sdlc",
+        "skills",
+        "subagent-driven-development",
+        "superpowers"
+      ],
+      "score": 1259.85,
+      "rating": 5.0,
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 ai, brainstorming, coding, obra, sdlc"
+      ]
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "AI / Agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars": 246244,
+      "forks": 51484,
+      "open_issues": 43620,
+      "created_at": "2025-07-22T22:22:28Z",
+      "pushed_at": "2026-09-17T03:12:06Z",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "hermes",
+        "hermes-agent",
+        "llm",
+        "nous-research",
+        "openai"
+      ],
+      "score": 975.5,
+      "rating": 5.0,
+      "summary": "The agent that grows with you",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 ai, ai-agent, ai-agents, anthropic, chatgpt"
+      ]
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "category": "AI / Agent",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "stars": 207953,
+      "forks": 27311,
+      "open_issues": 5800,
+      "created_at": "2025-04-30T20:08:00Z",
+      "pushed_at": "2026-09-17T03:22:20Z",
+      "topics": [],
+      "score": 756.25,
+      "rating": 5.0,
+      "summary": "The open source coding agent.",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新"
+      ]
+    },
+    {
+      "name": "donnemartin/system-design-primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "category": "Frontend",
+      "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+      "language": "Python",
+      "stars": 370418,
+      "forks": 58460,
+      "open_issues": 613,
+      "created_at": "2017-02-26T16:15:28Z",
+      "pushed_at": "2026-09-15T01:10:09Z",
+      "topics": [
+        "design",
+        "design-patterns",
+        "design-system",
+        "development",
+        "interview",
+        "interview-practice",
+        "interview-questions",
+        "programming",
+        "python",
+        "system",
+        "web",
+        "web-application",
+        "webapp"
+      ],
+      "score": 517.56,
+      "rating": 5.0,
+      "summary": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 design, design-patterns, design-system, development, interview"
+      ]
+    },
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "category": "Frontend",
+      "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+      "language": "TypeScript",
+      "stars": 367457,
+      "forks": 44958,
+      "open_issues": 0,
+      "created_at": "2017-03-15T13:45:52Z",
+      "pushed_at": "2026-09-16T10:45:56Z",
+      "topics": [
+        "angular-roadmap",
+        "backend-roadmap",
+        "blockchain-roadmap",
+        "computer-science",
+        "dba-roadmap",
+        "developer-roadmap",
+        "devops-roadmap",
+        "frontend-roadmap",
+        "go-roadmap",
+        "java-roadmap",
+        "javascript-roadmap",
+        "nodejs-roadmap",
+        "python-roadmap",
+        "qa-roadmap",
+        "react-roadmap",
+        "roadmap",
+        "software-architect-roadmap",
+        "vue-roadmap"
+      ],
+      "score": 514.78,
+      "rating": 5.0,
+      "summary": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 angular-roadmap, backend-roadmap, blockchain-roadmap, computer-science, dba-roadmap"
+      ]
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "category": "AI / Agent",
+      "description": "Curated list of project-based tutorials",
+      "language": "Python",
+      "stars": 283581,
+      "forks": 36278,
+      "open_issues": 253,
+      "created_at": "2017-04-12T05:07:46Z",
+      "pushed_at": "2026-09-14T07:10:04Z",
+      "topics": [
+        "beginner-project",
+        "cpp",
+        "golang",
+        "javascript",
+        "project",
+        "python",
+        "tutorial",
+        "webdevelopment"
+      ],
+      "score": 402.07,
+      "rating": 5.0,
+      "summary": "Curated list of project-based tutorials",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 beginner-project, cpp, golang, javascript, project"
+      ]
+    },
+    {
+      "name": "clash-verge-rev/clash-verge-rev",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev",
+      "category": "Frontend",
+      "description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
+      "language": "Rust",
+      "stars": 144959,
+      "forks": 10434,
+      "open_issues": 428,
+      "created_at": "2023-11-21T18:24:03Z",
+      "pushed_at": "2026-09-17T03:34:18Z",
+      "topics": [
+        "clash",
+        "clash-meta",
+        "clash-verge",
+        "linux",
+        "mac",
+        "mihomo",
+        "tauri-app",
+        "windows"
+      ],
+      "score": 375.97,
+      "rating": 5.0,
+      "summary": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 clash, clash-meta, clash-verge, linux, mac"
+      ]
+    },
+    {
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "category": "AI / Agent",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 65162,
+      "forks": 54545,
+      "open_issues": 44,
+      "created_at": "2026-01-10T06:43:20Z",
+      "pushed_at": "2026-09-13T09:18:52Z",
+      "topics": [
+        "a-stock",
+        "ai-agent",
+        "aigc",
+        "llm",
+        "quant",
+        "quantitative-finance",
+        "quantitative-trading"
+      ],
+      "score": 344.65,
+      "rating": 5.0,
+      "summary": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 a-stock, ai-agent, aigc, llm, quant"
+      ]
+    }
+  ]
+}

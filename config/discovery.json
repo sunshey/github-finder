@@ -1,0 +1,37 @@
+{
+  "lookback_days": 14,
+  "min_stars": 300,
+  "per_query_limit": 8,
+  "max_projects_per_run": 12,
+  "max_requests_per_run": 24,
+  "request_delay_seconds": 2.0,
+  "queries": [
+    {
+      "category": "AI / Agent",
+      "query": "agent OR mcp OR llm OR ai in:name,description,readme"
+    },
+    {
+      "category": "Developer Tools",
+      "query": "developer tool OR cli OR devtool OR automation in:name,description,readme"
+    },
+    {
+      "category": "Infrastructure",
+      "query": "database OR cache OR queue OR observability OR cloud native in:name,description,readme"
+    },
+    {
+      "category": "Frontend",
+      "query": "frontend OR react OR component OR ui OR design system in:name,description,readme"
+    },
+    {
+      "category": "Productivity",
+      "query": "productivity OR notes OR workflow OR knowledge base in:name,description,readme"
+    }
+  ],
+  "category_keywords": {
+    "AI / Agent": ["agent", "mcp", "llm", "ai", "rag", "model", "prompt"],
+    "Developer Tools": ["cli", "developer", "devtool", "automation", "debug", "testing", "sdk"],
+    "Infrastructure": ["database", "cache", "queue", "observability", "cloud", "kubernetes", "server"],
+    "Frontend": ["frontend", "react", "vue", "component", "ui", "css", "design"],
+    "Productivity": ["productivity", "notes", "workflow", "knowledge", "docs", "task"]
+  }
+}
