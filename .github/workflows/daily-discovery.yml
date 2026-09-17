@@ -27,6 +27,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md data/discovered.json reports/latest.md
+          git add README.md data/discovered.json data/agent_reach_queue.json reports/latest.md reports/agent-reach-tasks.md
           git diff --cached --quiet || git commit -m "Update daily discovery"
           git push

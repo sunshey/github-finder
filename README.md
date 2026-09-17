@@ -33,6 +33,8 @@
 
 - 汇总数据: [data/discovered.json](data/discovered.json)
 - 最新报告: [reports/latest.md](reports/latest.md)
+- Agent Reach 分析队列: [data/agent_reach_queue.json](data/agent_reach_queue.json)
+- Agent Reach 任务说明: [reports/agent-reach-tasks.md](reports/agent-reach-tasks.md)
 - 定时任务: [.github/workflows/daily-discovery.yml](.github/workflows/daily-discovery.yml)
 
 抓取频率和阈值在 [config/discovery.json](config/discovery.json) 中配置，默认包含：
@@ -41,8 +43,11 @@
 - 只看最近 14 天仍有更新的项目。
 - 最低 star 阈值为 300。
 - 每次最多输出 12 个候选项目。
+- 每次最多生成 5 个 Agent Reach 深度分析任务。
 - 每次最多 24 个 GitHub API 请求。
 - 每次请求之间等待 2 秒，避免高频抓取。
+
+GitHub Actions 负责自动抓取候选项目和生成 Agent Reach 分析队列。深度分析需要在安装了 `agent-reach` skill 的环境中执行，按 [reports/agent-reach-tasks.md](reports/agent-reach-tasks.md) 里的任务逐个生成正式项目分析。
 
 ## 推荐度说明
 
@@ -54,7 +59,7 @@
 <!-- latest-auto-start -->
 ## 最新自动候选
 
-最近更新: 2026-09-17T03:35:00+00:00
+最近更新: 2026-09-17T03:44:18+00:00
 
 | 分类 | 项目 | 简介 | 推荐度 |
 | --- | --- | --- | ---: |

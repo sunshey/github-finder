@@ -25,7 +25,9 @@ from typing import Any
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "discovery.json"
 DATA_FILE = ROOT / "data" / "discovered.json"
+AGENT_REACH_QUEUE_FILE = ROOT / "data" / "agent_reach_queue.json"
 REPORT_FILE = ROOT / "reports" / "latest.md"
+AGENT_REACH_TASKS_FILE = ROOT / "reports" / "agent-reach-tasks.md"
 README_FILE = ROOT / "README.md"
 README_START = "<!-- latest-auto-start -->"
 README_END = "<!-- latest-auto-end -->"
@@ -232,6 +234,7 @@ def discover(config: dict[str, Any], token: str | None) -> dict[str, Any]:
             "lookback_days": config["lookback_days"],
             "min_stars": config["min_stars"],
             "max_projects_per_run": config["max_projects_per_run"],
+            "agent_reach_analysis_limit": config.get("agent_reach_analysis_limit", 5),
         },
         "projects": analyzed,
     }
@@ -269,6 +272,84 @@ def render_report(data: dict[str, Any]) -> str:
         for reason in project["why"]:
             lines.append(f"- {reason}")
         lines.append("")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def build_agent_reach_queue(data: dict[str, Any]) -> dict[str, Any]:
+    limit = int(data["criteria"].get("agent_reach_analysis_limit", 5))
+    projects = []
+    for project in data["projects"][:limit]:
+        slug = project["name"].replace("/", "-").lower()
+        projects.append(
+            {
+                "name": project["name"],
+                "url": project["url"],
+                "category": project["category"],
+                "suggested_output": f"projects/{category_slug(project['category'])}/{slug}.md",
+                "prompt": build_agent_reach_prompt(project),
+            }
+        )
+
+    return {
+        "generated_at": data["generated_at"],
+        "source": "data/discovered.json",
+        "note": "Run these tasks in an environment where the agent-reach skill is available.",
+        "projects": projects,
+    }
+
+
+def build_agent_reach_prompt(project: dict[str, Any]) -> str:
+    return (
+        "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n"
+        f"- 项目: {project['name']}\n"
+        f"- URL: {project['url']}\n"
+        f"- 分类: {project['category']}\n"
+        "需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、"
+        "是否值得关注、适合/不适合的人群、数据依据。"
+    )
+
+
+def category_slug(category: str) -> str:
+    return (
+        category.lower()
+        .replace("/", "")
+        .replace(" ", "-")
+        .replace("--", "-")
+        .strip("-")
+    )
+
+
+def render_agent_reach_tasks(queue: dict[str, Any]) -> str:
+    lines = [
+        "# Agent Reach 深度分析队列",
+        "",
+        f"- 生成时间: {queue['generated_at']}",
+        "- 用途: GitHub 定时任务抓取候选项目后，为具备 agent-reach skill 的环境生成深度分析任务。",
+        "",
+        "## 使用方式",
+        "",
+        "在 Codex 或其他已安装 agent-reach 的环境中，按下面任务逐个执行。每个任务都应使用 agent-reach 的 GitHub/dev 路径读取仓库资料，再生成对应的项目分析 Markdown。",
+        "",
+        "## 待分析项目",
+        "",
+    ]
+
+    for index, project in enumerate(queue["projects"], start=1):
+        lines.extend(
+            [
+                f"### {index}. {project['name']}",
+                "",
+                f"- URL: {project['url']}",
+                f"- 分类: {project['category']}",
+                f"- 建议输出: `{project['suggested_output']}`",
+                "",
+                "```text",
+                project["prompt"],
+                "```",
+                "",
+            ]
+        )
 
     return "\n".join(lines).rstrip() + "\n"
 
@@ -319,10 +400,15 @@ def update_readme(data: dict[str, Any]) -> None:
 def write_outputs(data: dict[str, Any], update_readme_enabled: bool) -> None:
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     REPORT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    queue = build_agent_reach_queue(data)
     DATA_FILE.write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    AGENT_REACH_QUEUE_FILE.write_text(
+        json.dumps(queue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     REPORT_FILE.write_text(render_report(data), encoding="utf-8")
+    AGENT_REACH_TASKS_FILE.write_text(render_agent_reach_tasks(queue), encoding="utf-8")
     if update_readme_enabled:
         update_readme(data)
 

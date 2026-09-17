@@ -3,6 +3,7 @@
   "min_stars": 300,
   "per_query_limit": 8,
   "max_projects_per_run": 12,
+  "agent_reach_analysis_limit": 5,
   "max_requests_per_run": 24,
   "request_delay_seconds": 2.0,
   "queries": [

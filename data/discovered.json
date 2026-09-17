@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T03:35:00+00:00",
+  "generated_at": "2026-09-17T03:44:18+00:00",
   "request_budget": {
     "used": 5,
     "max": 24,
@@ -8,7 +8,8 @@
   "criteria": {
     "lookback_days": 14,
     "min_stars": 300,
-    "max_projects_per_run": 12
+    "max_projects_per_run": 12,
+    "agent_reach_analysis_limit": 5
   },
   "projects": [
     {
@@ -17,8 +18,8 @@
       "category": "AI / Agent",
       "description": "DeepSeek Harness: Everything is a Plugin.",
       "language": "TypeScript",
-      "stars": 226854,
-      "forks": 27037,
+      "stars": 226868,
+      "forks": 27039,
       "open_issues": 0,
       "created_at": "2026-08-13T11:56:32Z",
       "pushed_at": "2026-09-15T04:51:11Z",
@@ -28,7 +29,7 @@
         "dsh",
         "dsh-plugin"
       ],
-      "score": 3127.68,
+      "score": 3127.87,
       "rating": 5.0,
       "summary": "DeepSeek Harness: Everything is a Plugin.",
       "why": [
@@ -43,11 +44,11 @@
       "category": "AI / Agent",
       "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
       "language": "TypeScript",
-      "stars": 389914,
+      "stars": 389917,
       "forks": 81962,
-      "open_issues": 7593,
+      "open_issues": 7588,
       "created_at": "2025-11-24T10:16:47Z",
-      "pushed_at": "2026-09-17T03:33:03Z",
+      "pushed_at": "2026-09-17T03:43:38Z",
       "topics": [
         "ai",
         "assistant",
@@ -57,7 +58,7 @@
         "own-your-data",
         "personal"
       ],
-      "score": 1829.17,
+      "score": 1829.18,
       "rating": 5.0,
       "summary": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
       "why": [
@@ -72,13 +73,13 @@
       "category": "AI / Agent",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 263707,
+      "stars": 263712,
       "forks": 22253,
       "open_issues": 501,
       "created_at": "2026-02-03T11:15:53Z",
       "pushed_at": "2026-09-15T14:29:06Z",
       "topics": [],
-      "score": 1421.77,
+      "score": 1421.8,
       "rating": 5.0,
       "summary": "Skills for Real Engineers. Straight from my .agents directory.",
       "why": [
@@ -92,7 +93,7 @@
       "category": "AI / Agent",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 260396,
+      "stars": 260403,
       "forks": 38979,
       "open_issues": 218,
       "created_at": "2026-01-18T00:51:51Z",
@@ -107,7 +108,7 @@
         "mcp",
         "productivity"
       ],
-      "score": 1354.61,
+      "score": 1354.64,
       "rating": 5.0,
       "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "why": [
@@ -122,8 +123,8 @@
       "category": "AI / Agent",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 287674,
-      "forks": 25733,
+      "stars": 287681,
+      "forks": 25734,
       "open_issues": 371,
       "created_at": "2025-10-09T19:45:18Z",
       "pushed_at": "2026-09-14T18:42:08Z",
@@ -137,7 +138,7 @@
         "subagent-driven-development",
         "superpowers"
       ],
-      "score": 1259.85,
+      "score": 1259.88,
       "rating": 5.0,
       "summary": "An agentic skills framework & software development methodology that works.",
       "why": [
@@ -152,9 +153,9 @@
       "category": "AI / Agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "stars": 246244,
+      "stars": 246247,
       "forks": 51484,
-      "open_issues": 43620,
+      "open_issues": 43632,
       "created_at": "2025-07-22T22:22:28Z",
       "pushed_at": "2026-09-17T03:12:06Z",
       "topics": [
@@ -172,7 +173,7 @@
         "nous-research",
         "openai"
       ],
-      "score": 975.5,
+      "score": 975.51,
       "rating": 5.0,
       "summary": "The agent that grows with you",
       "why": [
@@ -187,13 +188,13 @@
       "category": "AI / Agent",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 207953,
+      "stars": 207958,
       "forks": 27311,
       "open_issues": 5800,
       "created_at": "2025-04-30T20:08:00Z",
       "pushed_at": "2026-09-17T03:22:20Z",
       "topics": [],
-      "score": 756.25,
+      "score": 756.27,
       "rating": 5.0,
       "summary": "The open source coding agent.",
       "why": [
@@ -242,7 +243,7 @@
       "category": "Frontend",
       "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
       "language": "TypeScript",
-      "stars": 367457,
+      "stars": 367459,
       "forks": 44958,
       "open_issues": 0,
       "created_at": "2017-03-15T13:45:52Z",
@@ -282,8 +283,8 @@
       "category": "AI / Agent",
       "description": "Curated list of project-based tutorials",
       "language": "Python",
-      "stars": 283581,
-      "forks": 36278,
+      "stars": 283582,
+      "forks": 36279,
       "open_issues": 253,
       "created_at": "2017-04-12T05:07:46Z",
       "pushed_at": "2026-09-14T07:10:04Z",
@@ -313,7 +314,7 @@
       "description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
       "language": "Rust",
       "stars": 144959,
-      "forks": 10434,
+      "forks": 10435,
       "open_issues": 428,
       "created_at": "2023-11-21T18:24:03Z",
       "pushed_at": "2026-09-17T03:34:18Z",
@@ -343,7 +344,7 @@
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
       "stars": 65162,
-      "forks": 54545,
+      "forks": 54546,
       "open_issues": 44,
       "created_at": "2026-01-10T06:43:20Z",
       "pushed_at": "2026-09-13T09:18:52Z",
