@@ -131,7 +131,7 @@
 
 ## 数据依据
 
-- 仓库元数据: 26886 stars、5156 forks、1491 open issues、Apache-2.0、默认分支 `main`，更新时间 2026-09-17T07:17:29Z，最近 push 2026-09-17T06:55:59Z。
+- 仓库元数据: 26886 stars、5156 forks、1491 open issues、Apache-2.0、默认分支 `main`，更新时间 2026-09-17T15:17:29+08:00，最近 push 2026-09-17T14:55:59+08:00。
 - README: https://github.com/vercel/ai/blob/main/README.md
 - AI SDK 文档: https://ai-sdk.dev
 - 主包 `ai`: https://github.com/vercel/ai/tree/main/packages/ai

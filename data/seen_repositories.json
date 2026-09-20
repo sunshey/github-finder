@@ -1,125 +1,125 @@
 {
   "version": 1,
-  "updated_at": "2026-09-20T02:11:50+00:00",
+  "updated_at": "2026-09-20T10:11:50+08:00",
   "repositories": {
     "deepseek-ai/deepseek-harness": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 228292
     },
     "openclaw/openclaw": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 390028
     },
     "mattpocock/skills": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 264688
     },
     "affaan-m/ECC": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 261336
     },
     "obra/superpowers": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 288218
     },
     "NousResearch/hermes-agent": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 246633
     },
     "anomalyco/opencode": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 208256
     },
     "donnemartin/system-design-primer": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 370566
     },
     "nilbuild/developer-roadmap": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 367561
     },
     "practical-tutorials/project-based-learning": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 283699
     },
     "clash-verge-rev/clash-verge-rev": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 145173
     },
     "ZhuLinsen/daily_stock_analysis": {
-      "first_seen_at": "2026-09-18T05:53:35+00:00",
-      "last_published_at": "2026-09-18T05:53:35+00:00",
+      "first_seen_at": "2026-09-18T13:53:35+08:00",
+      "last_published_at": "2026-09-18T13:53:35+08:00",
       "last_stars": 65226
     },
     "react/react": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 250596
     },
     "n8n-io/n8n": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 205388
     },
     "react/react-native": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 126661
     },
     "axios/axios": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 109205
     },
     "microsoft/Web-Dev-For-Beginners": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 96712
     },
     "doocs/advanced-java": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 79118
     },
     "redis/redis": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 76406
     },
     "strapi/strapi": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 73192
     },
     "ruvnet/ruflo": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 72869
     },
     "toeverything/AFFiNE": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 72781
     },
     "moby/moby": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 72113
     },
     "ansible/ansible": {
-      "first_seen_at": "2026-09-20T02:11:50+00:00",
-      "last_published_at": "2026-09-20T02:11:50+00:00",
+      "first_seen_at": "2026-09-20T10:11:50+08:00",
+      "last_published_at": "2026-09-20T10:11:50+08:00",
       "last_stars": 70739
     }
   }

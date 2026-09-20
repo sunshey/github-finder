@@ -127,7 +127,7 @@
 
 ## 数据依据
 
-- 仓库元数据: 1165 stars、347 forks、99 open issues、MIT License、默认分支 `main`，更新时间 2026-09-16T01:25:08Z，最近 push 2026-09-11T15:54:08Z。
+- 仓库元数据: 1165 stars、347 forks、99 open issues、MIT License、默认分支 `main`，更新时间 2026-09-16T09:25:08+08:00，最近 push 2026-09-11T23:54:08+08:00。
 - README: https://github.com/cloudflare/ai/blob/main/README.md
 - Workers AI provider: https://github.com/cloudflare/ai/tree/main/packages/workers-ai-provider
 - AI Gateway provider: https://github.com/cloudflare/ai/tree/main/packages/ai-gateway-provider

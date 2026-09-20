@@ -1,6 +1,6 @@
 # 自动发现项目
 
-- 生成时间: 2026-09-20T02:11:50+00:00
+- 生成时间（北京时间）: 2026-09-20T10:11:50+08:00
 - 请求次数: 5 / 24
 - 抓取窗口: 最近 14 天有更新
 - 最低 stars: 300
@@ -28,7 +28,7 @@
 
 - 语言: JavaScript
 - Stars/Forks: 250596 / 51378
-- 最近更新: 2026-09-18T09:18:04Z
+- 最近更新时间（北京时间）: 2026-09-18T17:18:04+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 declarative, frontend, javascript, library, react
@@ -37,7 +37,7 @@
 
 - 语言: TypeScript
 - Stars/Forks: 205388 / 60790
-- 最近更新: 2026-09-19T20:30:25Z
+- 最近更新时间（北京时间）: 2026-09-20T04:30:25+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 ai, apis, automation, cli, data-flow
@@ -46,7 +46,7 @@
 
 - 语言: C++
 - Stars/Forks: 126661 / 25280
-- 最近更新: 2026-09-19T21:52:23Z
+- 最近更新时间（北京时间）: 2026-09-20T05:52:23+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 android, app-framework, cross-platform, ios, mobile
@@ -55,7 +55,7 @@
 
 - 语言: JavaScript
 - Stars/Forks: 109205 / 11867
-- 最近更新: 2026-09-16T19:05:23Z
+- 最近更新时间（北京时间）: 2026-09-17T03:05:23+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 hacktoberfest, http-client, javascript, nodejs, promise
@@ -64,7 +64,7 @@
 
 - 语言: JavaScript
 - Stars/Forks: 96712 / 15926
-- 最近更新: 2026-09-19T06:14:01Z
+- 最近更新时间（北京时间）: 2026-09-19T14:14:01+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 css, curriculum, education, html, javascript
@@ -73,7 +73,7 @@
 
 - 语言: Java
 - Stars/Forks: 79118 / 19147
-- 最近更新: 2026-09-12T03:17:49Z
+- 最近更新时间（北京时间）: 2026-09-12T11:17:49+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 advanced-java, distributed-search-engine, distributed-systems, doocs, dubbo
@@ -82,7 +82,7 @@
 
 - 语言: C
 - Stars/Forks: 76406 / 24812
-- 最近更新: 2026-09-17T15:06:55Z
+- 最近更新时间（北京时间）: 2026-09-17T23:06:55+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 cache, caching, database, distributed-systems, in-memory
@@ -91,7 +91,7 @@
 
 - 语言: TypeScript
 - Stars/Forks: 73192 / 9875
-- 最近更新: 2026-09-18T17:04:33Z
+- 最近更新时间（北京时间）: 2026-09-19T01:04:33+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 api, cms, cms-framework, content-management, content-management-system
@@ -100,7 +100,7 @@
 
 - 语言: TypeScript
 - Stars/Forks: 72869 / 8648
-- 最近更新: 2026-09-19T06:23:46Z
+- 最近更新时间（北京时间）: 2026-09-19T14:23:46+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents
@@ -109,7 +109,7 @@
 
 - 语言: TypeScript
 - Stars/Forks: 72781 / 5288
-- 最近更新: 2026-09-19T17:26:28Z
+- 最近更新时间（北京时间）: 2026-09-20T01:26:28+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 app, crdt, editor, electron, knowledge-base
@@ -118,7 +118,7 @@
 
 - 语言: Go
 - Stars/Forks: 72113 / 19232
-- 最近更新: 2026-09-19T20:58:46Z
+- 最近更新时间（北京时间）: 2026-09-20T04:58:46+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 containers, docker, go, golang
@@ -127,7 +127,7 @@
 
 - 语言: Python
 - Stars/Forks: 70739 / 24333
-- 最近更新: 2026-09-18T18:12:11Z
+- 最近更新时间（北京时间）: 2026-09-19T02:12:11+08:00
 - star 数很高，已经有明显社区关注
 - 最近一周仍有更新
 - 主题覆盖 ansible, python

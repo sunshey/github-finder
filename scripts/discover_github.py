@@ -33,6 +33,7 @@ README_FILE = ROOT / "README.md"
 README_START = "<!-- latest-auto-start -->"
 README_END = "<!-- latest-auto-end -->"
 UTC = dt.timezone.utc
+BEIJING_TZ = dt.timezone(dt.timedelta(hours=8), name="Asia/Shanghai")
 
 
 class RequestBudget:
@@ -152,7 +153,7 @@ def search_repositories(
     budget: RequestBudget,
     token: str | None,
 ) -> list[dict[str, Any]]:
-    since = (dt.datetime.now(UTC) - dt.timedelta(days=config["lookback_days"])).date()
+    since = (now_beijing() - dt.timedelta(days=config["lookback_days"])).date()
     full_query = (
         f"({query}) stars:>={config['min_stars']} pushed:>={since} "
         "archived:false fork:false"
@@ -180,7 +181,7 @@ def score_repo(repo: dict[str, Any]) -> float:
     open_issues = repo.get("open_issues_count") or 0
     pushed_at = parse_time(repo.get("pushed_at"))
     created_at = parse_time(repo.get("created_at"))
-    now = dt.datetime.now(UTC)
+    now = now_utc()
 
     days_since_push = max((now - pushed_at).days, 0) if pushed_at else 365
     repo_age_days = max((now - created_at).days, 1) if created_at else 365
@@ -202,6 +203,21 @@ def parse_time(value: str | None) -> dt.datetime | None:
     if not value:
         return None
     return dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+
+def now_utc() -> dt.datetime:
+    return dt.datetime.now(UTC)
+
+
+def now_beijing() -> dt.datetime:
+    return now_utc().astimezone(BEIJING_TZ)
+
+
+def format_beijing_time(value: str | None) -> str | None:
+    parsed = parse_time(value)
+    if parsed is None:
+        return None
+    return parsed.astimezone(BEIJING_TZ).isoformat(timespec="seconds")
 
 
 def classify_repo(repo: dict[str, Any], config: dict[str, Any]) -> str:
@@ -239,7 +255,7 @@ def analyze_repo(repo: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]
         why.append("达到当前收录阈值，可作为候选观察")
 
     pushed_at = parse_time(repo.get("pushed_at"))
-    if pushed_at and (dt.datetime.now(UTC) - pushed_at).days <= 7:
+    if pushed_at and (now_utc() - pushed_at).days <= 7:
         why.append("最近一周仍有更新")
     if topics:
         why.append("主题覆盖 " + ", ".join(topics[:5]))
@@ -253,8 +269,8 @@ def analyze_repo(repo: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]
         "stars": repo.get("stargazers_count") or 0,
         "forks": repo.get("forks_count") or 0,
         "open_issues": repo.get("open_issues_count") or 0,
-        "created_at": repo.get("created_at"),
-        "pushed_at": repo.get("pushed_at"),
+        "created_at": format_beijing_time(repo.get("created_at")),
+        "pushed_at": format_beijing_time(repo.get("pushed_at")),
         "topics": topics,
         "score": score,
         "rating": rating,
@@ -296,7 +312,7 @@ def discover(
     analyzed = analyzed[: int(config["max_projects_per_run"])]
 
     data = {
-        "generated_at": dt.datetime.now(UTC).isoformat(timespec="seconds"),
+        "generated_at": now_beijing().isoformat(timespec="seconds"),
         "request_budget": {
             "used": budget.used,
             "max": budget.max_requests,
@@ -323,7 +339,7 @@ def render_report(data: dict[str, Any]) -> str:
     lines = [
         "# 自动发现项目",
         "",
-        f"- 生成时间: {data['generated_at']}",
+        f"- 生成时间（北京时间）: {data['generated_at']}",
         f"- 请求次数: {data['request_budget']['used']} / {data['request_budget']['max']}",
         f"- 抓取窗口: 最近 {data['criteria']['lookback_days']} 天有更新",
         f"- 最低 stars: {data['criteria']['min_stars']}",
@@ -347,7 +363,7 @@ def render_report(data: dict[str, Any]) -> str:
         lines.append("")
         lines.append(f"- 语言: {project['language']}")
         lines.append(f"- Stars/Forks: {project['stars']} / {project['forks']}")
-        lines.append(f"- 最近更新: {project['pushed_at']}")
+        lines.append(f"- 最近更新（北京时间）: {project['pushed_at']}")
         for reason in project["why"]:
             lines.append(f"- {reason}")
         lines.append("")
@@ -403,7 +419,7 @@ def render_agent_reach_tasks(queue: dict[str, Any]) -> str:
     lines = [
         "# Agent Reach 深度分析队列",
         "",
-        f"- 生成时间: {queue['generated_at']}",
+        f"- 生成时间（北京时间）: {queue['generated_at']}",
         "- 用途: GitHub 定时任务抓取候选项目后，为具备 agent-reach skill 的环境生成深度分析任务。",
         "",
         "## 使用方式",
@@ -454,7 +470,7 @@ def update_readme(data: dict[str, Any]) -> None:
         README_START,
         "## 最新自动候选",
         "",
-        f"最近更新: {data['generated_at']}",
+        f"最近更新时间（北京时间）: {data['generated_at']}",
         "",
         "| 分类 | 项目 | 简介 | 推荐度 |",
         "| --- | --- | --- | ---: |",
