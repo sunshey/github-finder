@@ -25,6 +25,7 @@ from typing import Any
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "discovery.json"
 DATA_FILE = ROOT / "data" / "discovered.json"
+ALL_PROJECTS_FILE = ROOT / "data" / "all_projects.json"
 SEEN_REPOSITORIES_FILE = ROOT / "data" / "seen_repositories.json"
 AGENT_REACH_QUEUE_FILE = ROOT / "data" / "agent_reach_queue.json"
 REPORT_FILE = ROOT / "reports" / "latest.md"
@@ -98,6 +99,41 @@ def load_seen_registry() -> dict[str, Any]:
     }
 
 
+def load_project_catalog() -> dict[str, dict[str, Any]]:
+    if ALL_PROJECTS_FILE.exists():
+        try:
+            payload = load_json(ALL_PROJECTS_FILE)
+            projects = payload.get("projects")
+            if isinstance(projects, list):
+                return {
+                    project["name"]: project
+                    for project in projects
+                    if isinstance(project, dict) and project.get("name")
+                }
+        except (OSError, json.JSONDecodeError, TypeError, ValueError):
+            print(
+                f"warning: unable to read {ALL_PROJECTS_FILE}; rebuilding catalog",
+                file=sys.stderr,
+            )
+
+    catalog: dict[str, dict[str, Any]] = {}
+    if DATA_FILE.exists():
+        try:
+            previous = load_json(DATA_FILE)
+            source_projects = previous.get("total_projects") or previous.get("projects", [])
+            catalog = {
+                project["name"]: project
+                for project in source_projects
+                if isinstance(project, dict) and project.get("name")
+            }
+        except (OSError, json.JSONDecodeError, TypeError, ValueError):
+            print(
+                f"warning: unable to bootstrap catalog from {DATA_FILE}",
+                file=sys.stderr,
+            )
+    return catalog
+
+
 def update_seen_registry(
     registry: dict[str, Any], projects: list[dict[str, Any]], published_at: str
 ) -> dict[str, Any]:
@@ -113,6 +149,27 @@ def update_seen_registry(
     registry["version"] = 1
     registry["updated_at"] = published_at
     return registry
+
+
+def sort_projects(projects: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return sorted(
+        projects,
+        key=lambda project: (project["stars"], project["score"], project["name"]),
+        reverse=True,
+    )
+
+
+def update_project_catalog(
+    catalog: dict[str, dict[str, Any]],
+    refreshed_projects: list[dict[str, Any]],
+    published_projects: list[dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    for project in refreshed_projects:
+        if project["name"] in catalog:
+            catalog[project["name"]] = project
+    for project in published_projects:
+        catalog[project["name"]] = project
+    return catalog
 
 
 def github_get(url: str, budget: RequestBudget, token: str | None) -> dict[str, Any]:
@@ -217,7 +274,7 @@ def format_beijing_time(value: str | None) -> str | None:
     parsed = parse_time(value)
     if parsed is None:
         return None
-    return parsed.astimezone(BEIJING_TZ).isoformat(timespec="seconds")
+    return parsed.astimezone(BEIJING_TZ).strftime("%Y-%m-%d %H:%M:%S")
 
 
 def classify_repo(repo: dict[str, Any], config: dict[str, Any]) -> str:
@@ -301,18 +358,8 @@ def discover(
         for repo in repos:
             by_name[repo["full_name"]] = repo
 
-    new_repositories = [
-        repo for name, repo in by_name.items() if name not in seen_names
-    ]
-    analyzed = [analyze_repo(repo, config) for repo in new_repositories]
-    analyzed.sort(
-        key=lambda repo: (repo["stars"], repo["score"], repo["name"]),
-        reverse=True,
-    )
-    analyzed = analyzed[: int(config["max_projects_per_run"])]
-
     data = {
-        "generated_at": now_beijing().isoformat(timespec="seconds"),
+        "generated_at": now_beijing().strftime("%Y-%m-%d %H:%M:%S"),
         "request_budget": {
             "used": budget.used,
             "max": budget.max_requests,
@@ -327,12 +374,46 @@ def discover(
         "deduplication": {
             "seen_projects": len(seen_names),
             "fetched_unique_projects": len(by_name),
-            "excluded_seen_projects": len(by_name) - len(new_repositories),
-            "new_projects_before_limit": len(new_repositories),
+            "excluded_seen_projects": 0,
+            "new_projects_before_limit": 0,
+            "new_projects_published": 0,
         },
-        "projects": analyzed,
+        "projects": [],
+        "total_projects": [],
     }
+    catalog = load_project_catalog()
+    analyzed_fetched = [analyze_repo(repo, config) for repo in by_name.values()]
+    new_repositories = [
+        project for project in analyzed_fetched if project["name"] not in seen_names
+    ]
+    daily_projects = sort_projects(new_repositories)[
+        : int(config["max_projects_per_run"])
+    ]
+    catalog = update_project_catalog(catalog, analyzed_fetched, daily_projects)
+    total_projects = sort_projects(list(catalog.values()))
+
+    data["projects"] = daily_projects
+    data["total_projects"] = total_projects
+    data["deduplication"]["excluded_seen_projects"] = len(by_name) - len(
+        new_repositories
+    )
+    data["deduplication"]["new_projects_before_limit"] = len(new_repositories)
+    data["deduplication"]["new_projects_published"] = len(daily_projects)
     return data, seen_registry
+
+
+def render_project_table(projects: list[dict[str, Any]]) -> list[str]:
+    lines = [
+        "| 分类 | 项目 | 简介 | Stars | 推荐度 |",
+        "| --- | --- | --- | ---: | ---: |",
+    ]
+    for project in projects:
+        lines.append(
+            f"| {project['category']} | [{project['name']}]({project['url']}) | "
+            f"{escape_table(project['summary'])} | {project['stars']} | "
+            f"{project['rating']} / 5 |"
+        )
+    return lines
 
 
 def render_report(data: dict[str, Any]) -> str:
@@ -344,30 +425,25 @@ def render_report(data: dict[str, Any]) -> str:
         f"- 抓取窗口: 最近 {data['criteria']['lookback_days']} 天有更新",
         f"- 最低 stars: {data['criteria']['min_stars']}",
         "",
-        "## 候选项目",
+        "## 总榜单",
         "",
-        "| 分类 | 项目 | 简介 | Stars | 推荐度 |",
-        "| --- | --- | --- | ---: | ---: |",
     ]
-
-    for project in data["projects"]:
-        description = escape_table(project["summary"])
-        lines.append(
-            f"| {project['category']} | [{project['name']}]({project['url']}) | "
-            f"{description} | {project['stars']} | {project['rating']} / 5 |"
-        )
-
+    lines.extend(render_project_table(data["total_projects"]))
+    lines.extend(["", "## 当日新榜单", ""])
+    lines.extend(render_project_table(data["projects"]))
     lines.extend(["", "## 关注理由", ""])
     for project in data["projects"]:
-        lines.append(f"### {project['name']}")
+        lines.extend(
+            [
+                f"### {project['name']}",
+                "",
+                f"- 语言: {project['language']}",
+                f"- Stars/Forks: {project['stars']} / {project['forks']}",
+                f"- 最近更新（北京时间）: {project['pushed_at']}",
+            ]
+        )
+        lines.extend(f"- {reason}" for reason in project["why"])
         lines.append("")
-        lines.append(f"- 语言: {project['language']}")
-        lines.append(f"- Stars/Forks: {project['stars']} / {project['forks']}")
-        lines.append(f"- 最近更新（北京时间）: {project['pushed_at']}")
-        for reason in project["why"]:
-            lines.append(f"- {reason}")
-        lines.append("")
-
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -465,22 +541,25 @@ def update_readme(data: dict[str, Any]) -> None:
     if not README_FILE.exists():
         return
     readme = README_FILE.read_text(encoding="utf-8")
-    top_projects = data["projects"][:5]
     block_lines = [
         README_START,
-        "## 最新自动候选",
+        "## 自动发现榜单",
         "",
-        f"最近更新时间（北京时间）: {data['generated_at']}",
+        f"最近更新时间: {data['generated_at']}",
         "",
-        "| 分类 | 项目 | 简介 | 推荐度 |",
-        "| --- | --- | --- | ---: |",
+        "### 总榜单",
+        "",
     ]
-    for project in top_projects:
-        block_lines.append(
-            f"| {project['category']} | [{project['name']}]({project['url']}) | "
-            f"{escape_table(project['summary'])} | {project['rating']} / 5 |"
-        )
-    block_lines.extend(["", "完整候选见 [reports/latest.md](reports/latest.md)。", README_END])
+    block_lines.extend(render_project_table(data["total_projects"][:20]))
+    block_lines.extend(["", "### 当日新榜单", ""])
+    block_lines.extend(render_project_table(data["projects"]))
+    block_lines.extend(
+        [
+            "",
+            "完整项目详情见 [reports/latest.md](reports/latest.md)。",
+            README_END,
+        ]
+    )
     block = "\n".join(block_lines)
 
     if README_START in readme and README_END in readme:
@@ -502,6 +581,18 @@ def write_outputs(
     queue = build_agent_reach_queue(data)
     DATA_FILE.write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    ALL_PROJECTS_FILE.write_text(
+        json.dumps(
+            {
+                "updated_at": data["generated_at"],
+                "projects": data["total_projects"],
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
     )
     updated_registry = update_seen_registry(
         seen_registry, data["projects"], data["generated_at"]

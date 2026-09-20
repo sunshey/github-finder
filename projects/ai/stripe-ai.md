@@ -120,7 +120,7 @@
 
 ## 数据依据
 
-- 仓库元数据: 1821 stars、342 forks、88 open issues、MIT License、默认分支 `main`，更新时间 2026-09-17T08:49:01+08:00。
+- 仓库元数据: 1821 stars、342 forks、88 open issues、MIT License、默认分支 `main`，更新时间 2026-09-17 08:49:01。
 - README: https://github.com/stripe/ai/blob/main/README.md
 - TypeScript toolkit: https://github.com/stripe/ai/tree/main/tools/typescript
 - Python toolkit: https://github.com/stripe/ai/tree/main/tools/python

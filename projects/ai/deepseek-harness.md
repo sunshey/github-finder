@@ -122,7 +122,7 @@ DeepSeek Harness 提供一个可运行、可扩展的本地 Agent 环境：
 
 ## 数据依据
 
-- 仓库元数据: 227161 stars、27071 forks、0 open issues、MIT、默认分支 `master`，创建时间 2026-08-13T19:56:32+08:00，最近 push 2026-09-15T12:51:11+08:00。
+- 仓库元数据: 227161 stars、27071 forks、0 open issues、MIT、默认分支 `master`，创建时间 2026-08-13 19:56:32，最近 push 2026-09-15 12:51:11。
 - 语言分布: TypeScript 约 38.8 MB，CSS 约 0.53 MB，Python 约 0.43 MB，JavaScript 约 0.25 MB，另有 C、Shell、C++、PowerShell、HTML、Batchfile、NSIS。
 - Topics: `ai-agents`、`cordis`、`dsh`、`dsh-plugin`。
 - README: https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md
