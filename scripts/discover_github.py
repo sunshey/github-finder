@@ -550,7 +550,7 @@ def update_readme(data: dict[str, Any]) -> None:
         "### 总榜单",
         "",
     ]
-    block_lines.extend(render_project_table(data["total_projects"][:20]))
+    block_lines.extend(render_project_table(data["total_projects"]))
     block_lines.extend(["", "### 当日新榜单", ""])
     block_lines.extend(render_project_table(data["projects"]))
     block_lines.extend(
