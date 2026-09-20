@@ -40,15 +40,15 @@
 <!-- latest-auto-start -->
 ## 最新自动候选
 
-最近更新: 2026-09-19T05:50:28+00:00
+最近更新: 2026-09-20T02:11:50+00:00
 
 | 分类 | 项目 | 简介 | 推荐度 |
 | --- | --- | --- | ---: |
-| AI / Agent | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | DeepSeek Harness: Everything is a Plugin. | 5.0 / 5 |
-| AI / Agent | [openclaw/openclaw](https://github.com/openclaw/openclaw) | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 | 5.0 / 5 |
-| AI / Agent | [mattpocock/skills](https://github.com/mattpocock/skills) | Skills for Real Engineers. Straight from my .agents directory. | 5.0 / 5 |
-| AI / Agent | [affaan-m/ECC](https://github.com/affaan-m/ECC) | The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. | 5.0 / 5 |
-| AI / Agent | [obra/superpowers](https://github.com/obra/superpowers) | An agentic skills framework & software development methodology that works. | 5.0 / 5 |
+| Frontend | [react/react](https://github.com/react/react) | The library for web and native user interfaces. | 5.0 / 5 |
+| AI / Agent | [n8n-io/n8n](https://github.com/n8n-io/n8n) | Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. | 5.0 / 5 |
+| Frontend | [react/react-native](https://github.com/react/react-native) | A framework for building native applications using React | 5.0 / 5 |
+| Developer Tools | [axios/axios](https://github.com/axios/axios) | Promise based HTTP client for the browser and node.js | 5.0 / 5 |
+| Developer Tools | [microsoft/Web-Dev-For-Beginners](https://github.com/microsoft/Web-Dev-For-Beginners) | 24 Lessons, 12 Weeks, Get Started as a Web Developer | 5.0 / 5 |
 
 完整候选见 [reports/latest.md](reports/latest.md)。
 <!-- latest-auto-end -->

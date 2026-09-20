@@ -1,42 +1,42 @@
 {
-  "generated_at": "2026-09-19T05:50:28+00:00",
+  "generated_at": "2026-09-20T02:11:50+00:00",
   "source": "data/discovered.json",
   "note": "Run these tasks in an environment where the agent-reach skill is available.",
   "projects": [
     {
-      "name": "deepseek-ai/deepseek-harness",
-      "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "category": "AI / Agent",
-      "suggested_output": "projects/ai-agent/deepseek-ai-deepseek-harness.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: deepseek-ai/deepseek-harness\n- URL: https://github.com/deepseek-ai/deepseek-harness\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "category": "Frontend",
+      "suggested_output": "projects/frontend/react-react.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: react/react\n- URL: https://github.com/react/react\n- 分类: Frontend\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
     },
     {
-      "name": "openclaw/openclaw",
-      "url": "https://github.com/openclaw/openclaw",
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
       "category": "AI / Agent",
-      "suggested_output": "projects/ai-agent/openclaw-openclaw.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: openclaw/openclaw\n- URL: https://github.com/openclaw/openclaw\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+      "suggested_output": "projects/ai-agent/n8n-io-n8n.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: n8n-io/n8n\n- URL: https://github.com/n8n-io/n8n\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
     },
     {
-      "name": "mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "category": "AI / Agent",
-      "suggested_output": "projects/ai-agent/mattpocock-skills.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: mattpocock/skills\n- URL: https://github.com/mattpocock/skills\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+      "name": "react/react-native",
+      "url": "https://github.com/react/react-native",
+      "category": "Frontend",
+      "suggested_output": "projects/frontend/react-react-native.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: react/react-native\n- URL: https://github.com/react/react-native\n- 分类: Frontend\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
     },
     {
-      "name": "affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "category": "AI / Agent",
-      "suggested_output": "projects/ai-agent/affaan-m-ecc.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: affaan-m/ECC\n- URL: https://github.com/affaan-m/ECC\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+      "name": "axios/axios",
+      "url": "https://github.com/axios/axios",
+      "category": "Developer Tools",
+      "suggested_output": "projects/developer-tools/axios-axios.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: axios/axios\n- URL: https://github.com/axios/axios\n- 分类: Developer Tools\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
     },
     {
-      "name": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "category": "AI / Agent",
-      "suggested_output": "projects/ai-agent/obra-superpowers.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: obra/superpowers\n- URL: https://github.com/obra/superpowers\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+      "name": "microsoft/Web-Dev-For-Beginners",
+      "url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+      "category": "Developer Tools",
+      "suggested_output": "projects/developer-tools/microsoft-web-dev-for-beginners.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: microsoft/Web-Dev-For-Beginners\n- URL: https://github.com/microsoft/Web-Dev-For-Beginners\n- 分类: Developer Tools\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
     }
   ]
 }
