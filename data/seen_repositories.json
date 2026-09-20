@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-20 10:11:50",
+  "updated_at": "2026-09-20 14:11:55",
   "repositories": {
     "deepseek-ai/deepseek-harness": {
       "first_seen_at": "2026-09-18 13:53:35",
@@ -121,6 +121,66 @@
       "first_seen_at": "2026-09-20 10:11:50",
       "last_published_at": "2026-09-20 10:11:50",
       "last_stars": 70739
+    },
+    "tw93/Mole": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 67843
+    },
+    "asgeirtj/system_prompts_leaks": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 67731
+    },
+    "leonardomso/33-js-concepts": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 66529
+    },
+    "prometheus/prometheus": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 66135
+    },
+    "traefik/traefik": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 64904
+    },
+    "usememos/memos": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 63180
+    },
+    "ghostty-org/ghostty": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 61326
+    },
+    "typst/typst": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 56136
+    },
+    "gatsbyjs/gatsby": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 55939
+    },
+    "hesreallyhim/awesome-claude-code": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 54330
+    },
+    "chen08209/FlClash": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 52740
+    },
+    "slidevjs/slidev": {
+      "first_seen_at": "2026-09-20 14:11:55",
+      "last_published_at": "2026-09-20 14:11:55",
+      "last_stars": 48750
     }
   }
 }
