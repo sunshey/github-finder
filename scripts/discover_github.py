@@ -25,6 +25,7 @@ from typing import Any
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "discovery.json"
 DATA_FILE = ROOT / "data" / "discovered.json"
+SEEN_REPOSITORIES_FILE = ROOT / "data" / "seen_repositories.json"
 AGENT_REACH_QUEUE_FILE = ROOT / "data" / "agent_reach_queue.json"
 REPORT_FILE = ROOT / "reports" / "latest.md"
 AGENT_REACH_TASKS_FILE = ROOT / "reports" / "agent-reach-tasks.md"
@@ -50,6 +51,67 @@ class RequestBudget:
 
 def load_json(path: pathlib.Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_seen_registry() -> dict[str, Any]:
+    """Load repositories already published in a previous discovery榜单."""
+    if SEEN_REPOSITORIES_FILE.exists():
+        try:
+            registry = load_json(SEEN_REPOSITORIES_FILE)
+            repositories = registry.get("repositories")
+            if isinstance(repositories, dict):
+                return {
+                    "version": int(registry.get("version", 1)),
+                    "updated_at": registry.get("updated_at"),
+                    "repositories": repositories,
+                }
+        except (OSError, json.JSONDecodeError, TypeError, ValueError):
+            print(
+                f"warning: unable to read {SEEN_REPOSITORIES_FILE}; rebuilding registry",
+                file=sys.stderr,
+            )
+
+    repositories: dict[str, dict[str, Any]] = {}
+    if DATA_FILE.exists():
+        try:
+            previous = load_json(DATA_FILE)
+            first_seen_at = previous.get("generated_at")
+            for project in previous.get("projects", []):
+                name = project.get("name")
+                if name:
+                    repositories[name] = {
+                        "first_seen_at": first_seen_at,
+                        "last_published_at": first_seen_at,
+                        "last_stars": project.get("stars", 0),
+                    }
+        except (OSError, json.JSONDecodeError, TypeError, ValueError):
+            print(
+                f"warning: unable to bootstrap seen registry from {DATA_FILE}",
+                file=sys.stderr,
+            )
+
+    return {
+        "version": 1,
+        "updated_at": None,
+        "repositories": repositories,
+    }
+
+
+def update_seen_registry(
+    registry: dict[str, Any], projects: list[dict[str, Any]], published_at: str
+) -> dict[str, Any]:
+    repositories = registry.setdefault("repositories", {})
+    for project in projects:
+        name = project["name"]
+        previous = repositories.get(name, {})
+        repositories[name] = {
+            "first_seen_at": previous.get("first_seen_at") or published_at,
+            "last_published_at": published_at,
+            "last_stars": project.get("stars", 0),
+        }
+    registry["version"] = 1
+    registry["updated_at"] = published_at
+    return registry
 
 
 def github_get(url: str, budget: RequestBudget, token: str | None) -> dict[str, Any]:
@@ -201,12 +263,16 @@ def analyze_repo(repo: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]
     }
 
 
-def discover(config: dict[str, Any], token: str | None) -> dict[str, Any]:
+def discover(
+    config: dict[str, Any], token: str | None
+) -> tuple[dict[str, Any], dict[str, Any]]:
     budget = RequestBudget(
         max_requests=int(config["max_requests_per_run"]),
         delay_seconds=float(config["request_delay_seconds"]),
     )
     by_name: dict[str, dict[str, Any]] = {}
+    seen_registry = load_seen_registry()
+    seen_names = set(seen_registry.get("repositories", {}))
 
     for item in config["queries"]:
         try:
@@ -219,11 +285,17 @@ def discover(config: dict[str, Any], token: str | None) -> dict[str, Any]:
         for repo in repos:
             by_name[repo["full_name"]] = repo
 
-    analyzed = [analyze_repo(repo, config) for repo in by_name.values()]
-    analyzed.sort(key=lambda repo: repo["score"], reverse=True)
+    new_repositories = [
+        repo for name, repo in by_name.items() if name not in seen_names
+    ]
+    analyzed = [analyze_repo(repo, config) for repo in new_repositories]
+    analyzed.sort(
+        key=lambda repo: (repo["stars"], repo["score"], repo["name"]),
+        reverse=True,
+    )
     analyzed = analyzed[: int(config["max_projects_per_run"])]
 
-    return {
+    data = {
         "generated_at": dt.datetime.now(UTC).isoformat(timespec="seconds"),
         "request_budget": {
             "used": budget.used,
@@ -236,8 +308,15 @@ def discover(config: dict[str, Any], token: str | None) -> dict[str, Any]:
             "max_projects_per_run": config["max_projects_per_run"],
             "agent_reach_analysis_limit": config.get("agent_reach_analysis_limit", 5),
         },
+        "deduplication": {
+            "seen_projects": len(seen_names),
+            "fetched_unique_projects": len(by_name),
+            "excluded_seen_projects": len(by_name) - len(new_repositories),
+            "new_projects_before_limit": len(new_repositories),
+        },
         "projects": analyzed,
     }
+    return data, seen_registry
 
 
 def render_report(data: dict[str, Any]) -> str:
@@ -397,12 +476,23 @@ def update_readme(data: dict[str, Any]) -> None:
     README_FILE.write_text(readme, encoding="utf-8")
 
 
-def write_outputs(data: dict[str, Any], update_readme_enabled: bool) -> None:
+def write_outputs(
+    data: dict[str, Any],
+    update_readme_enabled: bool,
+    seen_registry: dict[str, Any],
+) -> None:
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     REPORT_FILE.parent.mkdir(parents=True, exist_ok=True)
     queue = build_agent_reach_queue(data)
     DATA_FILE.write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    updated_registry = update_seen_registry(
+        seen_registry, data["projects"], data["generated_at"]
+    )
+    SEEN_REPOSITORIES_FILE.write_text(
+        json.dumps(updated_registry, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
     )
     AGENT_REACH_QUEUE_FILE.write_text(
         json.dumps(queue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -422,13 +512,17 @@ def main() -> int:
 
     config = load_json(args.config)
     token = os.environ.get("GITHUB_TOKEN")
-    data = discover(config, token)
+    data, seen_registry = discover(config, token)
 
     if args.dry_run:
         print_utf8(json.dumps(data, ensure_ascii=False, indent=2))
         return 0
 
-    write_outputs(data, update_readme_enabled=not args.skip_readme)
+    write_outputs(
+        data,
+        update_readme_enabled=not args.skip_readme,
+        seen_registry=seen_registry,
+    )
     print(
         f"discovered {len(data['projects'])} projects "
         f"using {data['request_budget']['used']} requests"
