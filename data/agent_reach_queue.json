@@ -1,42 +1,6 @@
 {
-  "generated_at": "2026-09-20 14:11:55",
+  "generated_at": "2026-09-21 14:17:22",
   "source": "data/discovered.json",
   "note": "Run these tasks in an environment where the agent-reach skill is available.",
-  "projects": [
-    {
-      "name": "tw93/Mole",
-      "url": "https://github.com/tw93/Mole",
-      "category": "AI / Agent",
-      "suggested_output": "projects/ai-agent/tw93-mole.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: tw93/Mole\n- URL: https://github.com/tw93/Mole\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
-    },
-    {
-      "name": "asgeirtj/system_prompts_leaks",
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "category": "AI / Agent",
-      "suggested_output": "projects/ai-agent/asgeirtj-system_prompts_leaks.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: asgeirtj/system_prompts_leaks\n- URL: https://github.com/asgeirtj/system_prompts_leaks\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
-    },
-    {
-      "name": "leonardomso/33-js-concepts",
-      "url": "https://github.com/leonardomso/33-js-concepts",
-      "category": "Developer Tools",
-      "suggested_output": "projects/developer-tools/leonardomso-33-js-concepts.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: leonardomso/33-js-concepts\n- URL: https://github.com/leonardomso/33-js-concepts\n- 分类: Developer Tools\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
-    },
-    {
-      "name": "prometheus/prometheus",
-      "url": "https://github.com/prometheus/prometheus",
-      "category": "Infrastructure",
-      "suggested_output": "projects/infrastructure/prometheus-prometheus.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: prometheus/prometheus\n- URL: https://github.com/prometheus/prometheus\n- 分类: Infrastructure\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
-    },
-    {
-      "name": "traefik/traefik",
-      "url": "https://github.com/traefik/traefik",
-      "category": "Infrastructure",
-      "suggested_output": "projects/infrastructure/traefik-traefik.md",
-      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: traefik/traefik\n- URL: https://github.com/traefik/traefik\n- 分类: Infrastructure\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
-    }
-  ]
+  "projects": []
 }
