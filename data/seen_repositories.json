@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28 14:49:12",
+  "updated_at": "2026-09-29 14:52:40",
   "repositories": {
     "deepseek-ai/deepseek-harness": {
       "first_seen_at": "2026-09-18 13:53:35",
@@ -196,6 +196,11 @@
       "first_seen_at": "2026-09-28 14:49:12",
       "last_published_at": "2026-09-28 14:49:12",
       "last_stars": 45173
+    },
+    "BerriAI/litellm": {
+      "first_seen_at": "2026-09-29 14:52:40",
+      "last_published_at": "2026-09-29 14:52:40",
+      "last_stars": 59824
     }
   }
 }
