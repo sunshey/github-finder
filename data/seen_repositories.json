@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10 15:02:03",
+  "updated_at": "2026-10-11 15:08:53",
   "repositories": {
     "deepseek-ai/deepseek-harness": {
       "first_seen_at": "2026-09-18 13:53:35",
@@ -201,6 +201,16 @@
       "first_seen_at": "2026-09-29 14:52:40",
       "last_published_at": "2026-09-29 14:52:40",
       "last_stars": 59824
+    },
+    "morluto/rea": {
+      "first_seen_at": "2026-10-11 15:08:53",
+      "last_published_at": "2026-10-11 15:08:53",
+      "last_stars": 79626
+    },
+    "calesthio/OpenMontage": {
+      "first_seen_at": "2026-10-11 15:08:53",
+      "last_published_at": "2026-10-11 15:08:53",
+      "last_stars": 66425
     }
   }
 }
