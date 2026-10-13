@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12 15:19:08",
+  "updated_at": "2026-10-13 15:40:47",
   "projects": [
     {
       "name": "openclaw/openclaw",
@@ -7,11 +7,11 @@
       "category": "AI / Agent",
       "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
       "language": "TypeScript",
-      "stars": 391726,
-      "forks": 82370,
-      "open_issues": 9547,
+      "stars": 391824,
+      "forks": 82386,
+      "open_issues": 9564,
       "created_at": "2025-11-24 18:16:47",
-      "pushed_at": "2026-10-12 15:18:55",
+      "pushed_at": "2026-10-13 15:40:32",
       "topics": [
         "ai",
         "assistant",
@@ -21,7 +21,7 @@
         "own-your-data",
         "personal"
       ],
-      "score": 1765.22,
+      "score": 1762.94,
       "rating": 5.0,
       "summary": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
       "why": [
@@ -70,9 +70,9 @@
       "category": "Frontend",
       "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
       "language": "TypeScript",
-      "stars": 369190,
-      "forks": 45101,
-      "open_issues": 7,
+      "stars": 369261,
+      "forks": 45104,
+      "open_issues": 11,
       "created_at": "2017-03-15 21:45:52",
       "pushed_at": "2026-10-10 01:39:16",
       "topics": [
@@ -95,7 +95,7 @@
         "software-architect-roadmap",
         "vue-roadmap"
       ],
-      "score": 515.24,
+      "score": 515.22,
       "rating": 5.0,
       "summary": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
       "why": [
@@ -110,9 +110,9 @@
       "category": "AI / Agent",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 297873,
-      "forks": 26610,
-      "open_issues": 331,
+      "stars": 298347,
+      "forks": 26662,
+      "open_issues": 334,
       "created_at": "2025-10-10 03:45:18",
       "pushed_at": "2026-10-10 11:03:30",
       "topics": [
@@ -125,7 +125,7 @@
         "subagent-driven-development",
         "superpowers"
       ],
-      "score": 1259.35,
+      "score": 1259.59,
       "rating": 5.0,
       "summary": "An agentic skills framework & software development methodology that works.",
       "why": [
@@ -140,13 +140,13 @@
       "category": "AI / Agent",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 286768,
-      "forks": 24058,
-      "open_issues": 166,
+      "stars": 288461,
+      "forks": 24214,
+      "open_issues": 167,
       "created_at": "2026-02-03 19:15:53",
-      "pushed_at": "2026-10-09 18:57:08",
+      "pushed_at": "2026-10-12 16:46:48",
       "topics": [],
-      "score": 1466.33,
+      "score": 1472.09,
       "rating": 5.0,
       "summary": "Skills for Real Engineers. Straight from my .agents directory.",
       "why": [
@@ -160,11 +160,11 @@
       "category": "AI / Agent",
       "description": "Curated list of project-based tutorials",
       "language": "Python",
-      "stars": 286431,
-      "forks": 36617,
-      "open_issues": 247,
+      "stars": 286551,
+      "forks": 36622,
+      "open_issues": 241,
       "created_at": "2017-04-12 13:07:46",
-      "pushed_at": "2026-10-05 15:20:21",
+      "pushed_at": "2026-10-12 15:22:00",
       "topics": [
         "beginner-project",
         "cpp",
@@ -175,7 +175,7 @@
         "tutorial",
         "webdevelopment"
       ],
-      "score": 404.3,
+      "score": 404.66,
       "rating": 5.0,
       "summary": "Curated list of project-based tutorials",
       "why": [
@@ -190,11 +190,11 @@
       "category": "AI / Agent",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 277402,
-      "forks": 41373,
-      "open_issues": 156,
+      "stars": 278110,
+      "forks": 41446,
+      "open_issues": 168,
       "created_at": "2026-01-18 08:51:51",
-      "pushed_at": "2026-10-12 14:22:31",
+      "pushed_at": "2026-10-12 22:45:46",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -205,7 +205,7 @@
         "mcp",
         "productivity"
       ],
-      "score": 1373.76,
+      "score": 1374.68,
       "rating": 5.0,
       "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "why": [
@@ -220,11 +220,11 @@
       "category": "AI / Agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "stars": 252891,
-      "forks": 54772,
-      "open_issues": 48033,
+      "stars": 253251,
+      "forks": 54898,
+      "open_issues": 48220,
       "created_at": "2025-07-23 06:22:28",
-      "pushed_at": "2026-10-12 14:39:13",
+      "pushed_at": "2026-10-13 15:34:49",
       "topics": [
         "ai",
         "ai-agent",
@@ -240,7 +240,7 @@
         "nous-research",
         "openai"
       ],
-      "score": 973.41,
+      "score": 973.7,
       "rating": 5.0,
       "summary": "The agent that grows with you",
       "why": [
@@ -255,11 +255,11 @@
       "category": "Frontend",
       "description": "The library for web and native user interfaces.",
       "language": "JavaScript",
-      "stars": 250889,
-      "forks": 51477,
-      "open_issues": 1432,
+      "stars": 250966,
+      "forks": 51478,
+      "open_issues": 1425,
       "created_at": "2013-05-25 00:15:54",
-      "pushed_at": "2026-10-10 01:09:46",
+      "pushed_at": "2026-10-13 14:57:34",
       "topics": [
         "declarative",
         "frontend",
@@ -268,7 +268,7 @@
         "react",
         "ui"
       ],
-      "score": 302.57,
+      "score": 302.73,
       "rating": 5.0,
       "summary": "The library for web and native user interfaces.",
       "why": [
@@ -283,8 +283,8 @@
       "category": "AI / Agent",
       "description": "DeepSeek Harness: Everything is a Plugin.",
       "language": "TypeScript",
-      "stars": 247779,
-      "forks": 29785,
+      "stars": 248521,
+      "forks": 29879,
       "open_issues": 0,
       "created_at": "2026-08-13 19:56:32",
       "pushed_at": "2026-10-09 18:04:06",
@@ -294,7 +294,7 @@
         "dsh",
         "dsh-plugin"
       ],
-      "score": 2595.97,
+      "score": 2581.99,
       "rating": 5.0,
       "summary": "DeepSeek Harness: Everything is a Plugin.",
       "why": [
@@ -309,13 +309,13 @@
       "category": "AI / Agent",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 212788,
-      "forks": 28482,
-      "open_issues": 4007,
+      "stars": 213030,
+      "forks": 28548,
+      "open_issues": 4144,
       "created_at": "2025-05-01 04:08:00",
-      "pushed_at": "2026-10-12 15:17:24",
+      "pushed_at": "2026-10-13 15:40:09",
       "topics": [],
-      "score": 755.39,
+      "score": 755.53,
       "rating": 5.0,
       "summary": "The open source coding agent.",
       "why": [
@@ -329,11 +329,11 @@
       "category": "AI / Agent",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "language": "TypeScript",
-      "stars": 207047,
-      "forks": 61094,
-      "open_issues": 1164,
+      "stars": 207178,
+      "forks": 61112,
+      "open_issues": 1179,
       "created_at": "2019-06-22 17:24:21",
-      "pushed_at": "2026-10-12 15:18:59",
+      "pushed_at": "2026-10-13 15:40:05",
       "topics": [
         "ai",
         "apis",
@@ -356,7 +356,7 @@
         "workflow",
         "workflow-automation"
       ],
-      "score": 336.15,
+      "score": 336.3,
       "rating": 5.0,
       "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "why": [
@@ -366,76 +366,16 @@
       ]
     },
     {
-      "name": "clash-verge-rev/clash-verge-rev",
-      "url": "https://github.com/clash-verge-rev/clash-verge-rev",
-      "category": "Frontend",
-      "description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
-      "language": "Rust",
-      "stars": 150710,
-      "forks": 10842,
-      "open_issues": 504,
-      "created_at": "2023-11-22 02:24:03",
-      "pushed_at": "2026-10-12 14:39:23",
-      "topics": [
-        "clash",
-        "clash-meta",
-        "clash-verge",
-        "linux",
-        "mac",
-        "mihomo",
-        "tauri-app",
-        "windows"
-      ],
-      "score": 385.88,
-      "rating": 5.0,
-      "summary": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
-      "why": [
-        "star 数很高，已经有明显社区关注",
-        "最近一周仍有更新",
-        "主题覆盖 clash, clash-meta, clash-verge, linux, mac"
-      ]
-    },
-    {
-      "name": "react/react-native",
-      "url": "https://github.com/react/react-native",
-      "category": "Frontend",
-      "description": "A framework for building native applications using React",
-      "language": "C++",
-      "stars": 126632,
-      "forks": 25310,
-      "open_issues": 1162,
-      "created_at": "2015-01-10 02:10:16",
-      "pushed_at": "2026-10-12 14:25:23",
-      "topics": [
-        "android",
-        "app-framework",
-        "cross-platform",
-        "ios",
-        "mobile",
-        "mobile-development",
-        "react",
-        "react-native"
-      ],
-      "score": 169.39,
-      "rating": 5.0,
-      "summary": "A framework for building native applications using React",
-      "why": [
-        "star 数很高，已经有明显社区关注",
-        "最近一周仍有更新",
-        "主题覆盖 android, app-framework, cross-platform, ios, mobile"
-      ]
-    },
-    {
       "name": "morluto/rea",
       "url": "https://github.com/morluto/rea",
       "category": "AI / Agent",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 120450,
-      "forks": 27046,
-      "open_issues": 191,
+      "stars": 175868,
+      "forks": 42217,
+      "open_issues": 550,
       "created_at": "2026-04-14 08:51:32",
-      "pushed_at": "2026-10-12 15:18:03",
+      "pushed_at": "2026-10-13 15:38:48",
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -458,7 +398,7 @@
         "reverse-engineering",
         "static-analysis"
       ],
-      "score": 731.0,
+      "score": 1058.12,
       "rating": 5.0,
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "why": [
@@ -468,16 +408,118 @@
       ]
     },
     {
+      "name": "clash-verge-rev/clash-verge-rev",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev",
+      "category": "Frontend",
+      "description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
+      "language": "Rust",
+      "stars": 150972,
+      "forks": 10868,
+      "open_issues": 507,
+      "created_at": "2023-11-22 02:24:03",
+      "pushed_at": "2026-10-13 04:30:01",
+      "topics": [
+        "clash",
+        "clash-meta",
+        "clash-verge",
+        "linux",
+        "mac",
+        "mihomo",
+        "tauri-app",
+        "windows"
+      ],
+      "score": 386.35,
+      "rating": 5.0,
+      "summary": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 clash, clash-meta, clash-verge, linux, mac"
+      ]
+    },
+    {
+      "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "category": "AI / Agent",
+      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "language": "Unknown",
+      "stars": 143982,
+      "forks": 34755,
+      "open_issues": 162,
+      "created_at": "2025-03-06 00:38:29",
+      "pushed_at": "2026-10-12 23:19:01",
+      "topics": [
+        "ai",
+        "bolt",
+        "cluely",
+        "copilot",
+        "cursor",
+        "cursorai",
+        "devin",
+        "github-copilot",
+        "lovable",
+        "open-source",
+        "perplexity",
+        "replit",
+        "system-prompts",
+        "trae",
+        "trae-ai",
+        "trae-ide",
+        "v0",
+        "vscode",
+        "windsurf",
+        "windsurf-ai"
+      ],
+      "score": 490.82,
+      "rating": 5.0,
+      "summary": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 ai, bolt, cluely, copilot, cursor"
+      ]
+    },
+    {
+      "name": "react/react-native",
+      "url": "https://github.com/react/react-native",
+      "category": "Frontend",
+      "description": "A framework for building native applications using React",
+      "language": "C++",
+      "stars": 126650,
+      "forks": 25311,
+      "open_issues": 1163,
+      "created_at": "2015-01-10 02:10:16",
+      "pushed_at": "2026-10-13 12:48:54",
+      "topics": [
+        "android",
+        "app-framework",
+        "cross-platform",
+        "ios",
+        "mobile",
+        "mobile-development",
+        "react",
+        "react-native"
+      ],
+      "score": 169.4,
+      "rating": 5.0,
+      "summary": "A framework for building native applications using React",
+      "why": [
+        "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
+        "主题覆盖 android, app-framework, cross-platform, ios, mobile"
+      ]
+    },
+    {
       "name": "VoltAgent/awesome-design-md",
       "url": "https://github.com/VoltAgent/awesome-design-md",
       "category": "Frontend",
       "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
       "language": "Unknown",
-      "stars": 120400,
-      "forks": 13420,
-      "open_issues": 313,
+      "stars": 120699,
+      "forks": 13442,
+      "open_issues": 312,
       "created_at": "2026-04-01 00:37:01",
-      "pushed_at": "2026-10-05 15:34:34",
+      "pushed_at": "2026-10-12 21:17:12",
       "topics": [
         "awesome-list",
         "design-md",
@@ -490,7 +532,7 @@
         "vibe-design",
         "vibecoding"
       ],
-      "score": 705.79,
+      "score": 706.03,
       "rating": 5.0,
       "summary": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
       "why": [
@@ -506,10 +548,10 @@
       "description": "Promise based HTTP client for the browser and node.js",
       "language": "JavaScript",
       "stars": 109362,
-      "forks": 11908,
-      "open_issues": 108,
+      "forks": 11911,
+      "open_issues": 109,
       "created_at": "2014-08-19 06:30:27",
-      "pushed_at": "2026-10-10 01:31:50",
+      "pushed_at": "2026-10-13 01:26:10",
       "topics": [
         "hacktoberfest",
         "http-client",
@@ -517,7 +559,7 @@
         "nodejs",
         "promise"
       ],
-      "score": 145.67,
+      "score": 145.76,
       "rating": 5.0,
       "summary": "Promise based HTTP client for the browser and node.js",
       "why": [
@@ -532,8 +574,8 @@
       "category": "Developer Tools",
       "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer",
       "language": "JavaScript",
-      "stars": 96938,
-      "forks": 16024,
+      "stars": 96943,
+      "forks": 16025,
       "open_issues": 137,
       "created_at": "2020-11-10 10:44:00",
       "pushed_at": "2026-10-12 04:26:52",
@@ -547,7 +589,7 @@
         "microsoft-for-beginners",
         "tutorials"
       ],
-      "score": 181.2,
+      "score": 181.12,
       "rating": 5.0,
       "summary": "24 Lessons, 12 Weeks, Get Started as a Web Developer",
       "why": [
@@ -603,11 +645,11 @@
       "category": "Infrastructure",
       "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
       "language": "C",
-      "stars": 76741,
-      "forks": 24847,
-      "open_issues": 3024,
+      "stars": 76770,
+      "forks": 24849,
+      "open_issues": 3036,
       "created_at": "2009-03-22 06:32:25",
-      "pushed_at": "2026-10-12 01:43:26",
+      "pushed_at": "2026-10-12 23:03:04",
       "topics": [
         "cache",
         "caching",
@@ -630,7 +672,7 @@
         "vector-databases",
         "vector-search"
       ],
-      "score": 90.97,
+      "score": 90.99,
       "rating": 5.0,
       "summary": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
       "why": [
@@ -645,11 +687,11 @@
       "category": "AI / Agent",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "stars": 74380,
-      "forks": 8846,
-      "open_issues": 1042,
+      "stars": 74476,
+      "forks": 8857,
+      "open_issues": 1035,
       "created_at": "2025-06-03 05:24:20",
-      "pushed_at": "2026-10-12 15:17:16",
+      "pushed_at": "2026-10-13 14:51:12",
       "topics": [
         "agentic-ai",
         "agentic-framework",
@@ -672,7 +714,7 @@
         "swarm-intelligence",
         "typescript"
       ],
-      "score": 281.17,
+      "score": 281.25,
       "rating": 5.0,
       "summary": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "why": [
@@ -687,11 +729,11 @@
       "category": "Productivity",
       "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
       "language": "TypeScript",
-      "stars": 73397,
-      "forks": 5347,
-      "open_issues": 769,
+      "stars": 73443,
+      "forks": 5353,
+      "open_issues": 771,
       "created_at": "2022-08-01 02:45:21",
-      "pushed_at": "2026-10-11 22:49:20",
+      "pushed_at": "2026-10-12 17:51:10",
       "topics": [
         "app",
         "crdt",
@@ -712,7 +754,7 @@
         "wiki",
         "workspace"
       ],
-      "score": 163.8,
+      "score": 163.84,
       "rating": 5.0,
       "summary": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
       "why": [
@@ -727,11 +769,11 @@
       "category": "Developer Tools",
       "description": "🚀 Strapi is the leading open-source headless CMS. It’s 100% JavaScript/TypeScript, fully customizable, and developer-first.",
       "language": "TypeScript",
-      "stars": 73297,
-      "forks": 9881,
-      "open_issues": 612,
+      "stars": 73300,
+      "forks": 9879,
+      "open_issues": 595,
       "created_at": "2015-09-30 23:34:48",
-      "pushed_at": "2026-10-12 06:08:52",
+      "pushed_at": "2026-10-13 15:10:02",
       "topics": [
         "api",
         "cms",
@@ -753,7 +795,7 @@
         "strapi",
         "typescript"
       ],
-      "score": 106.4,
+      "score": 106.39,
       "rating": 5.0,
       "summary": "🚀 Strapi is the leading open-source headless CMS. It’s 100% JavaScript/TypeScript, fully customizable, and developer-first.",
       "why": [
@@ -768,18 +810,18 @@
       "category": "AI / Agent",
       "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
       "language": "Go",
-      "stars": 72177,
+      "stars": 72181,
       "forks": 19239,
-      "open_issues": 3940,
+      "open_issues": 3942,
       "created_at": "2013-01-19 02:10:57",
-      "pushed_at": "2026-10-09 22:55:44",
+      "pushed_at": "2026-10-13 01:25:53",
       "topics": [
         "containers",
         "docker",
         "go",
         "golang"
       ],
-      "score": 95.61,
+      "score": 95.7,
       "rating": 5.0,
       "summary": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
       "why": [
@@ -794,16 +836,16 @@
       "category": "AI / Agent",
       "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.",
       "language": "Python",
-      "stars": 70958,
-      "forks": 24348,
-      "open_issues": 861,
+      "stars": 70978,
+      "forks": 24350,
+      "open_issues": 858,
       "created_at": "2012-03-06 22:58:02",
-      "pushed_at": "2026-10-10 01:15:59",
+      "pushed_at": "2026-10-13 03:39:28",
       "topics": [
         "ansible",
         "python"
       ],
-      "score": 91.9,
+      "score": 92.02,
       "rating": 5.0,
       "summary": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.",
       "why": [
@@ -818,11 +860,11 @@
       "category": "AI / Agent",
       "description": "🐹 Keep your Mac clean, light, and running like new. Fast open-source CLI, plus a native Mac app.",
       "language": "Shell",
-      "stars": 69985,
-      "forks": 2482,
-      "open_issues": 11,
+      "stars": 70134,
+      "forks": 2486,
+      "open_issues": 1,
       "created_at": "2025-09-23 14:38:40",
-      "pushed_at": "2026-10-12 08:26:53",
+      "pushed_at": "2026-10-13 11:52:35",
       "topics": [
         "analyzer",
         "appcleaner",
@@ -844,7 +886,7 @@
         "swiftui",
         "uninstall"
       ],
-      "score": 299.28,
+      "score": 299.52,
       "rating": 5.0,
       "summary": "🐹 Keep your Mac clean, light, and running like new. Fast open-source CLI, plus a native Mac app.",
       "why": [
@@ -859,8 +901,8 @@
       "category": "AI / Agent",
       "description": "Documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
       "language": "Python",
-      "stars": 69438,
-      "forks": 11297,
+      "stars": 69521,
+      "forks": 11301,
       "open_issues": 56,
       "created_at": "2025-05-03 10:43:56",
       "pushed_at": "2026-10-12 10:20:04",
@@ -886,7 +928,7 @@
         "system-prompt",
         "system-prompts"
       ],
-      "score": 256.0,
+      "score": 256.01,
       "rating": 5.0,
       "summary": "Documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
       "why": [
@@ -901,11 +943,11 @@
       "category": "AI / Agent",
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
-      "stars": 67161,
-      "forks": 8559,
-      "open_issues": 397,
+      "stars": 67700,
+      "forks": 8646,
+      "open_issues": 377,
       "created_at": "2026-03-29 23:23:22",
-      "pushed_at": "2026-10-04 00:28:55",
+      "pushed_at": "2026-10-13 00:48:52",
       "topics": [
         "agent",
         "agentic-ai",
@@ -927,11 +969,12 @@
         "video-generation",
         "video-production"
       ],
-      "score": 397.28,
+      "score": 399.79,
       "rating": 5.0,
       "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "why": [
         "star 数很高，已经有明显社区关注",
+        "最近一周仍有更新",
         "主题覆盖 agent, agentic-ai, ai, claude, copilot"
       ]
     },
@@ -1033,11 +1076,11 @@
       "category": "Infrastructure",
       "description": "The Cloud Native Application Proxy",
       "language": "Go",
-      "stars": 65172,
-      "forks": 6237,
-      "open_issues": 960,
+      "stars": 65187,
+      "forks": 6243,
+      "open_issues": 962,
       "created_at": "2015-09-14 03:04:02",
-      "pushed_at": "2026-10-12 12:38:06",
+      "pushed_at": "2026-10-12 23:36:07",
       "topics": [
         "consul",
         "docker",
@@ -1054,7 +1097,7 @@
         "traefik",
         "zookeeper"
       ],
-      "score": 95.74,
+      "score": 95.75,
       "rating": 5.0,
       "summary": "The Cloud Native Application Proxy",
       "why": [
@@ -1104,13 +1147,13 @@
       "category": "Frontend",
       "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
       "language": "Zig",
-      "stars": 62095,
-      "forks": 3627,
-      "open_issues": 255,
+      "stars": 62143,
+      "forks": 3636,
+      "open_issues": 263,
       "created_at": "2022-03-30 01:38:26",
-      "pushed_at": "2026-10-12 14:05:05",
+      "pushed_at": "2026-10-13 13:45:39",
       "topics": [],
-      "score": 135.61,
+      "score": 135.67,
       "rating": 5.0,
       "summary": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
       "why": [
@@ -1162,18 +1205,18 @@
       "category": "AI / Agent",
       "description": "A markup-based typesetting system that is powerful and easy to learn.",
       "language": "Rust",
-      "stars": 56567,
-      "forks": 1756,
+      "stars": 56587,
+      "forks": 1759,
       "open_issues": 1306,
       "created_at": "2019-09-25 05:41:56",
-      "pushed_at": "2026-10-10 00:09:32",
+      "pushed_at": "2026-10-13 01:00:03",
       "topics": [
         "compiler",
         "markup",
         "typesetting",
         "typst"
       ],
-      "score": 102.35,
+      "score": 102.47,
       "rating": 5.0,
       "summary": "A markup-based typesetting system that is powerful and easy to learn.",
       "why": [
@@ -1188,8 +1231,8 @@
       "category": "Frontend",
       "description": "React-based framework with performance, scalability, and security built in.",
       "language": "JavaScript",
-      "stars": 55937,
-      "forks": 10107,
+      "stars": 55936,
+      "forks": 10106,
       "open_issues": 453,
       "created_at": "2015-05-22 06:43:05",
       "pushed_at": "2026-10-06 06:46:22",
@@ -1202,7 +1245,7 @@
         "static-site-generator",
         "web-app"
       ],
-      "score": 82.86,
+      "score": 82.8,
       "rating": 5.0,
       "summary": "React-based framework with performance, scalability, and security built in.",
       "why": [
@@ -1217,11 +1260,11 @@
       "category": "AI / Agent",
       "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
       "language": "Python",
-      "stars": 55472,
-      "forks": 4810,
-      "open_issues": 1098,
+      "stars": 55550,
+      "forks": 4815,
+      "open_issues": 1095,
       "created_at": "2025-04-20 04:55:59",
-      "pushed_at": "2026-10-12 14:27:38",
+      "pushed_at": "2026-10-13 15:34:46",
       "topics": [
         "agent-skills",
         "agentic-code",
@@ -1243,7 +1286,7 @@
         "coding-assistants",
         "llm"
       ],
-      "score": 204.52,
+      "score": 204.61,
       "rating": 5.0,
       "summary": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
       "why": [
@@ -1258,9 +1301,9 @@
       "category": "Developer Tools",
       "description": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
       "language": "Dart",
-      "stars": 55329,
-      "forks": 3518,
-      "open_issues": 404,
+      "stars": 55452,
+      "forks": 3533,
+      "open_issues": 411,
       "created_at": "2023-08-15 15:47:22",
       "pushed_at": "2026-10-12 10:35:54",
       "topics": [
@@ -1274,7 +1317,7 @@
         "vless",
         "vpn"
       ],
-      "score": 143.82,
+      "score": 144.0,
       "rating": 5.0,
       "summary": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
       "why": [
@@ -1289,9 +1332,9 @@
       "category": "Developer Tools",
       "description": "Presentation Slides for Developers",
       "language": "TypeScript",
-      "stars": 49020,
+      "stars": 49033,
       "forks": 2223,
-      "open_issues": 232,
+      "open_issues": 233,
       "created_at": "2021-04-24 09:25:23",
       "pushed_at": "2026-10-02 15:30:24",
       "topics": [
@@ -1302,7 +1345,7 @@
         "vue",
         "vueuse"
       ],
-      "score": 100.52,
+      "score": 100.43,
       "rating": 5.0,
       "summary": "Presentation Slides for Developers",
       "why": [
@@ -1316,11 +1359,11 @@
       "category": "AI / Agent",
       "description": "Developer-first error tracking and performance monitoring",
       "language": "Python",
-      "stars": 45534,
-      "forks": 4915,
-      "open_issues": 2279,
+      "stars": 45545,
+      "forks": 4916,
+      "open_issues": 2286,
       "created_at": "2010-08-31 06:06:41",
-      "pushed_at": "2026-10-12 15:16:30",
+      "pushed_at": "2026-10-13 15:39:54",
       "topics": [
         "apm",
         "crash-reporting",
@@ -1338,7 +1381,7 @@
         "sentry",
         "tag-production"
       ],
-      "score": 60.83,
+      "score": 60.84,
       "rating": 5.0,
       "summary": "Developer-first error tracking and performance monitoring",
       "why": [
@@ -1353,8 +1396,8 @@
       "category": "Developer Tools",
       "description": "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.",
       "language": "Python",
-      "stars": 45427,
-      "forks": 4777,
+      "stars": 45489,
+      "forks": 4785,
       "open_issues": 492,
       "created_at": "2010-02-16 12:10:13",
       "pushed_at": "2026-10-06 06:18:35",
@@ -1371,7 +1414,7 @@
         "tls",
         "websocket"
       ],
-      "score": 59.68,
+      "score": 59.69,
       "rating": 5.0,
       "summary": "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.",
       "why": [
