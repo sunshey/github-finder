@@ -1,6 +1,14 @@
 {
-  "generated_at": "2026-10-15 13:52:27",
+  "generated_at": "2026-10-16 13:48:50",
   "source": "data/discovered.json",
   "note": "Run these tasks in an environment where the agent-reach skill is available.",
-  "projects": []
+  "projects": [
+    {
+      "name": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "category": "AI / Agent",
+      "suggested_output": "projects/ai-agent/hugohe3-ppt-master.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: hugohe3/ppt-master\n- URL: https://github.com/hugohe3/ppt-master\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+    }
+  ]
 }

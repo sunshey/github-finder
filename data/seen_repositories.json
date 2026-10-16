@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15 13:52:27",
+  "updated_at": "2026-10-16 13:48:50",
   "repositories": {
     "deepseek-ai/deepseek-harness": {
       "first_seen_at": "2026-09-18 13:53:35",
@@ -216,6 +216,11 @@
       "first_seen_at": "2026-10-13 15:40:47",
       "last_published_at": "2026-10-13 15:40:47",
       "last_stars": 143982
+    },
+    "hugohe3/ppt-master": {
+      "first_seen_at": "2026-10-16 13:48:50",
+      "last_published_at": "2026-10-16 13:48:50",
+      "last_stars": 62514
     }
   }
 }
