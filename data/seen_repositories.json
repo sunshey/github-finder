@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-31 14:57:08",
+  "updated_at": "2026-11-01 15:29:23",
   "repositories": {
     "deepseek-ai/deepseek-harness": {
       "first_seen_at": "2026-09-18 13:53:35",
@@ -221,6 +221,11 @@
       "first_seen_at": "2026-10-16 13:48:50",
       "last_published_at": "2026-10-16 13:48:50",
       "last_stars": 62514
+    },
+    "Alishahryar1/free-claude-code": {
+      "first_seen_at": "2026-11-01 15:29:23",
+      "last_published_at": "2026-11-01 15:29:23",
+      "last_stars": 65531
     }
   }
 }
