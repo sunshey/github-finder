@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-02 15:38:20",
+  "generated_at": "2026-11-03 15:52:50",
   "source": "data/discovered.json",
   "note": "Run these tasks in an environment where the agent-reach skill is available.",
-  "projects": []
+  "projects": [
+    {
+      "name": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "category": "AI / Agent",
+      "suggested_output": "projects/ai-agent/infiniflow-ragflow.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: infiniflow/ragflow\n- URL: https://github.com/infiniflow/ragflow\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+    },
+    {
+      "name": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "category": "AI / Agent",
+      "suggested_output": "projects/ai-agent/deusdata-codebase-memory-mcp.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: DeusData/codebase-memory-mcp\n- URL: https://github.com/DeusData/codebase-memory-mcp\n- 分类: AI / Agent\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+    }
+  ]
 }
