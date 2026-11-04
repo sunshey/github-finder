@@ -1,6 +1,6 @@
 # Agent Reach 深度分析队列
 
-- 生成时间（北京时间）: 2026-11-03 15:52:50
+- 生成时间（北京时间）: 2026-11-04 15:28:17
 - 用途: GitHub 定时任务抓取候选项目后，为具备 agent-reach skill 的环境生成深度分析任务。
 
 ## 使用方式
@@ -9,30 +9,16 @@
 
 ## 待分析项目
 
-### 1. infiniflow/ragflow
+### 1. ReactiveX/RxJava
 
-- URL: https://github.com/infiniflow/ragflow
-- 分类: AI / Agent
-- 建议输出: `projects/ai-agent/infiniflow-ragflow.md`
-
-```text
-使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。
-- 项目: infiniflow/ragflow
-- URL: https://github.com/infiniflow/ragflow
-- 分类: AI / Agent
-需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。
-```
-
-### 2. DeusData/codebase-memory-mcp
-
-- URL: https://github.com/DeusData/codebase-memory-mcp
-- 分类: AI / Agent
-- 建议输出: `projects/ai-agent/deusdata-codebase-memory-mcp.md`
+- URL: https://github.com/ReactiveX/RxJava
+- 分类: Frontend
+- 建议输出: `projects/frontend/reactivex-rxjava.md`
 
 ```text
 使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。
-- 项目: DeusData/codebase-memory-mcp
-- URL: https://github.com/DeusData/codebase-memory-mcp
-- 分类: AI / Agent
+- 项目: ReactiveX/RxJava
+- URL: https://github.com/ReactiveX/RxJava
+- 分类: Frontend
 需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。
 ```

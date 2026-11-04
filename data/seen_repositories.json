@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-03 15:52:50",
+  "updated_at": "2026-11-04 15:28:17",
   "repositories": {
     "deepseek-ai/deepseek-harness": {
       "first_seen_at": "2026-09-18 13:53:35",
@@ -236,6 +236,11 @@
       "first_seen_at": "2026-11-03 15:52:50",
       "last_published_at": "2026-11-03 15:52:50",
       "last_stars": 48034
+    },
+    "ReactiveX/RxJava": {
+      "first_seen_at": "2026-11-04 15:28:17",
+      "last_published_at": "2026-11-04 15:28:17",
+      "last_stars": 48157
     }
   }
 }
