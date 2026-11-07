@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06 15:53:43",
+  "updated_at": "2026-11-07 15:04:15",
   "repositories": {
     "deepseek-ai/deepseek-harness": {
       "first_seen_at": "2026-09-18 13:53:35",
@@ -241,6 +241,11 @@
       "first_seen_at": "2026-11-04 15:28:17",
       "last_published_at": "2026-11-04 15:28:17",
       "last_stars": 48157
+    },
+    "nestjs/nest": {
+      "first_seen_at": "2026-11-07 15:04:15",
+      "last_published_at": "2026-11-07 15:04:15",
+      "last_stars": 76988
     }
   }
 }
