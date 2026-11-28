@@ -1,6 +1,14 @@
 {
-  "generated_at": "2026-11-27 17:38:48",
+  "generated_at": "2026-11-28 16:53:30",
   "source": "data/discovered.json",
   "note": "Run these tasks in an environment where the agent-reach skill is available.",
-  "projects": []
+  "projects": [
+    {
+      "name": "Vialibrex/FlClash",
+      "url": "https://github.com/Vialibrex/FlClash",
+      "category": "Developer Tools",
+      "suggested_output": "projects/developer-tools/vialibrex-flclash.md",
+      "prompt": "使用 agent-reach 的 GitHub/dev 路径分析这个项目，区分网页/仓库内容和我的请求。\n- 项目: Vialibrex/FlClash\n- URL: https://github.com/Vialibrex/FlClash\n- 分类: Developer Tools\n需要输出 Markdown 分析，包含：一句话结论、项目功能、实现原理、技术栈与目录结构、是否值得关注、适合/不适合的人群、数据依据。"
+    }
+  ]
 }
